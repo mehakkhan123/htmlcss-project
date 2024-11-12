@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header start */
+header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 15px 30px;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icons i {
+    background-color: rgb(54, 52, 52); color: rgb(201, 198, 198); padding: 8px; border-radius: 50%;
+    font-size: small; cursor: pointer;
+}
+.tel {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.tel span{
+    color: white;
+}
+.tel button {
+    background-color: #2eb224;
+    padding: 7px 15px 7px 15px;
+    border: transparent;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px #2eb224;
+}
+/* header end */
+
+/* navbar start */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    border-bottom: rgb(255, 187, 0) 5px solid;
+}
+/* navbar end */
+
+/* hero section start */
+.hero {
+    background-color: #2eb224;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   padding: 100px 0px 15px 0px;
+}
+.hero h1{
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.hero p{
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+.hero button {
+    background-color: rgb(255, 187, 0);
+    text-transform: uppercase;
+    border: transparent;
+    border-bottom: rgb(247, 130, 34) 3px solid;
+    padding: 10px 30px 10px 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.rounds{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.round{
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+}
+.round2, .round3{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/* hero section end */
+
+/* advantages section start */
+.advantages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.advantages-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 45%;
+}
+.advantages-text h1{
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight:800;
+    padding: 10px;
+}
+.advantages-text p{
+    color: rgb(151, 149, 149);
+}
+.advantages-text span{
+    color: rgb(40, 158, 10);
+}
+.advantages-icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.icon i{
+    font-size: 60px;
+    background-color: rgb(243, 238, 238);
+    padding: 40px;
+    border-radius: 50%;
+}
+.icon h4{
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.icon p{
+    font-size: small;
+    color: rgb(172, 170, 170);
+    padding: 5px;
+}
+/* advantages section end */
+
+/* about section start */
+.about{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(223, 218, 218, 0.986);
+    align-items: center;
+    justify-content: center;
+}
+.about h1{
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight:800;
+    padding-top: 20px;
+}
+.about span{
+    color: rgb(40, 158, 10);
+}
+.about-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: justify;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+
+}
+.left p{
+    padding: 10px;
+}
+.left button {
+    background-color: rgb(255, 187, 0);
+    text-transform: uppercase;
+    border: transparent;
+    border-bottom: rgb(247, 130, 34) 3px solid;
+    padding: 10px 30px 10px 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    margin-left: 8px;
+    margin-top: 20px;
+}
+
+.right {
+    width: 35%;
+    padding: 0 40px 0 40px;
+}
+.right img{
+    width: 100%;
+}
+/* about section end */
+
+/* services section start */
+.services-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.services-container h1{
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight:800;
+    padding-top: 20px;
+}
+.services-container span{
+    color: rgb(40, 158, 10);
+}
+.para{
+    width: 50%;
+    text-align: center;
+    padding: 10 20px 0 20px;
+    color: grey;
+}
+.services{
+    display: flex;
+    gap: 30px;
+    padding: 50px 60px 20px 60px;
+}
+.services i {
+    background-color: orange;
+    color: rgb(223, 17, 17);
+    padding: 20px;
+    border-radius: 50%;
+    font-size: xx-large;
+    margin-top: -50px;
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(230, 227, 227);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.service h3{
+    padding: 10px;
+    text-transform: uppercase;
+}
+.service p{
+    color: grey;
+}
+.service a {
+    margin-top: 20px;
+    color: rgb(3, 158, 3);
+}
+/* services section end */
+
+/* portfolio section start */
+.portfolio-container{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio-container h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight:800;
+    padding-top: 20px;
+}
+.portfolio-container span{
+    color: rgb(40, 158, 10);
+}
+.portfolio-container p {
+    color: grey;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-container ul{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+.portfolio-container ul li{
+    list-style: none;
+}
+.portfolio-container ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+} 
+.portfolio-container ul li a:hover{
+    color: rgb(255, 187, 0);
+}
+
+.portfolios{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 40px 0;
+}
+.line1, .line2{
+    display: flex;
+    justify-content: center;
+}
+
+.logos{
+    width: 15%;
+}
+.logos img{
+    width: 100%;
+}
+/* portfolio section end */
+
+/* process section start */
+.process-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.process-container h1{
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight:800;
+    padding-top: 20px;
+}
+.process-container span{
+    color: rgb(40, 158, 10);
+}
+.process-container p{
+    color: grey;
+}
+.processes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px 20px 40px;
+}
+.process{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.process h3{
+    background-color: orange;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.process i{
+    color: #2eb224;
+    border: 3px solid rgb(177, 174, 174);
+    border-radius: 50%;
+    padding: 40px;
+    font-size: 40px;
+    margin-top: -18px;
+}
+.process h5{
+    text-transform: uppercase;
+    padding: 10px;
+}
+.process p{
+    width: 80%;
+    text-align: center;
+}
+/* process section end */
+
+/* people section start */
+.people-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgb(226, 224, 224);
+}
+.people-container h1{
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight:800;
+    padding-top: 20px;
+}
+.people-container span {
+    color: #2eb224;
+}
+.people-container p{
+    text-align: justify;
+}
+.people-container i {
+    font-size: 50px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.row1, .row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0 30px 0 30px;
+}
+.row1{
+    border-bottom: 3px solid rgb(173, 173, 173);
+    margin-top: 40px;
+}
+.col1, .col2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+.col1{
+    border-right: 3px solid rgb(173, 173, 173);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.circles{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.circle{
+    width: 18px;
+    height: 18px;
+    background-color: rgb(253, 122, 15);
+    border-radius: 50%;
+}
+.circle2, .circle3{
+    background-color: rgba(252, 199, 27, 0.945);
+}
+/* people section end */
+
+/* skills section start */
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skills-container h1{
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight:800;
+    padding-top: 20px;
+}
+.skills-container span{
+    color: #2eb224;
+}
+.skills-container p{
+    width: 50%;
+    text-align: center;
+    color: grey;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+}
+.skill{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skill-col h4{
+    padding: 15px;
+    text-transform: uppercase;
+}
+.skill1{
+    border: 25px solid rgb(255, 187, 0);
+    color: rgb(243, 142, 9);
+}
+.skill2{
+    border: 25px solid rgba(255, 0, 0, 0.884);
+    color: rgba(211, 14, 14, 0.884);
+}
+.skill3{
+    border: 25px solid rgba(148, 236, 15, 0.863);
+    color: rgba(73, 119, 4, 0.863);
+}
+.skill4{
+    border: 25px solid black;
+    color: black;
+}
+/* skills section end */
+
+/* project section start */
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2eb224;
+    padding: 20px;
+}
+.project-container h1{
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight:800;
+    color: white;
+    padding: 20px;
+}
+.project-container form{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+.project-container input{
+    padding: 10px;
+    border: transparent;
+    border-top: 2px solid rgb(221, 219, 219);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.project-container button {
+    background-color: rgb(255, 187, 0);
+    text-transform: uppercase;
+    border: transparent;
+    border-bottom: rgb(247, 130, 34) 3px solid;
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+.project-container p{
+    text-align: center;
+    width: 50%;
+    color: white;
+    padding: 20px;
+}
+/* project section end */
+
+/* contact section start */
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+.contact-container h1{
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight:800;
+}
+.contact-container span{
+    color: #2eb224;
+}
+
+.address{
+    display: flex;
+    gap: 10px;
+}
+.address i {
+    color: #2eb224;
+}
+.address p {
+    font-weight: bolder;
+}
+
+.contact{
+    display: flex;
+    gap: 40px;
+}
+.contact i{
+    color: #2eb224;
+}
+iframe{
+    width: 100%;
+}
+/* contact section end */
+
+/* footer start */
+.footer-container{
+    background-color: #124d0e;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+}
+.footer-container a,.footer-container li{
+    list-style: none;
+    color: white;
+}
+
+.column1, .column2, .column3, .column4{
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer end */
